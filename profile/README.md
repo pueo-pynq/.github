@@ -18,6 +18,10 @@ The boards involved are:
 * Trenz Electronic [TEB0835](https://shop.trenz-electronic.de/en/TEB0835-02-A-PCIe-Baseboard-for-Trenz-Electronic-TE0835-RFSoC) using a ZU25DR, although a ZU47DR would just require a part number change.
 * PUEO SURF (in progress)
 
+## Images
+
+https://pueo.uchicago.edu/data/pueo/disk-images/ 
+
 ## Common Interface
 
 All of these repositories contain common elements, namely 4 internal RAMs that capture data when commanded to by the processing system via a GPIO,
