@@ -39,3 +39,10 @@ in commit notes or other repositories. So don't use them, use these.
 
 ``rfsoc-pydaq`` is a Tkinter-based Python interface for quickly interacting with an RFSoC. It is board-agnostic so long as the overlay supports
 the ``internal_capture()`` function as mentioned above.
+
+To use it, you need a directory containing:
+* a Python module implementing a PYNQ Overlay class to control the board (see the ``python/`` subdirectories)
+* the bitstream you plan on programming (which should be referenced _directly_ in the PYNQ Overlay class constructor, again, see examples in ``python/``)
+* the hardware handoff (``.hwh``) file for that bitstream which should be named _identically_ to it (if bitstream is ``my_bitstream.bit`` you want ``my_bitstream.hwh``)
+* any additional Python modules or files needed (e.g. clock programming modules/files)
+
